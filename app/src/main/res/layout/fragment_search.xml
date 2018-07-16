@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/fragment_twitter_brand_icon"
+        android:layout_width="@dimen/fragment_twitter_brand_icon_width"
+        android:layout_height="@dimen/fragment_twitter_brand_icon_height"
+        android:layout_alignParentStart="true"
+        android:background="?android:selectableItemBackground"
+        android:padding="@dimen/fragment_twitter_brand_icon_padding"
+        android:src="@drawable/icon_twitter" />
+
+    <EditText
+        android:id="@+id/fragment_search_view_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_search_view_edit_text_height"
+        android:layout_toLeftOf="@id/fragment_search_button"
+        android:layout_toRightOf="@id/fragment_twitter_brand_icon"
+        android:background="@drawable/search_view_background"
+        android:hint="@string/search_edit_text_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/fragment_search_view_edit_text_padding_end"
+        android:paddingStart="@dimen/fragment_search_view_edit_text_padding_start"
+        android:singleLine="true"
+        android:text="BarackObama"
+        android:textColor="@color/light_blue"
+        android:textColorHint="@color/white_twitter" />
+
+    <ImageView
+        android:id="@+id/fragment_search_button"
+        android:layout_width="@dimen/fragment_search_button_width"
+        android:layout_height="@dimen/fragment_search_button_height"
+        android:layout_alignParentEnd="true"
+        android:background="?android:selectableItemBackground"
+        android:padding="@dimen/fragment_search_button_padding"
+        android:src="@drawable/icon_search" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fragment_search_view_edit_text"
+        android:background="@color/white_pale" />
+</RelativeLayout>

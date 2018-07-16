@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_twitter">#939393</color>
+    <color name="white_pale">#dcdcdc</color>
+    <color name="amazon">#050313</color>
+    <color name="gray">#979292</color>
+    <color name="twitter_brand">#b894d6e9</color>
+    <color name="light_gray">#e6e2e2</color>
+    <color name="border_gray">#b1adad</color>
+    <color name="blue">#1049d9</color>
+    <color name="light_blue">#517ae4</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_red">#c60505</color>
+    <color name="green">#34f131</color>
+    <color name="dark_green">#1fbf1d</color>
+    <color name="orange">#f7a644</color>
+    <color name="link_color_mention">#4094de</color>
+    <color name="link_color_url">#4094de</color>
+    <color name="link_color_hashtag">#4094de</color>
+</resources>

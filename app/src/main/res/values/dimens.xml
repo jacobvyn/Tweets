@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fragment_search_view_edit_text_height">60dp</dimen>
+    <dimen name="fragment_search_button_width">60dp</dimen>
+    <dimen name="fragment_search_button_height">60dp</dimen>
+    <dimen name="fragment_search_button_padding">15dp</dimen>
+    <dimen name="fragment_search_view_edit_text_padding_start">25dp</dimen>
+    <dimen name="fragment_twitter_brand_icon_width">60dp</dimen>
+    <dimen name="fragment_twitter_brand_icon_height">60dp</dimen>
+    <dimen name="fragment_twitter_brand_icon_padding">15dp</dimen>
+    <dimen name="fragment_twitter_no_twits_text_view_padding">5dp</dimen>
+    <dimen name="stats_margin_right">6dp</dimen>
+    <dimen name="stats_padding">4dp</dimen>
+    <dimen name="stats_icons_width">30dp</dimen>
+    <dimen name="stats_icon_height">30dp</dimen>
+    <dimen name="tweet_item_retweet_sign_image_width">20dp</dimen>
+    <dimen name="tweet_item_retweet_sign_image_height">20dp</dimen>
+    <dimen name="tweet_item_retweet_sign_image_padding">3dp</dimen>
+    <dimen name="fragment_search_view_edit_text_padding_end">20dp</dimen>
+</resources>
