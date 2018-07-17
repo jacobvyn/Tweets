@@ -42,13 +42,13 @@ public class SearchFragment extends Fragment implements View.OnClickListener, Te
 
     @Override
     public void onClick(View v) {
+        UiUtils.hideKeyboard(mSearchEditText);
         if (v.getId() == R.id.fragment_search_button) {
             onSearch(mSearchEditText.getText().toString());
         }
     }
 
     public void onSearch(String expression) {
-        UiUtils.hideKeyboard(mSearchEditText);
         if (mListener != null) {
             mListener.onSearch(expression);
         }
@@ -56,6 +56,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener, Te
 
     @Override
     public boolean onEditorAction(TextView textView, int actionId, KeyEvent event) {
+        UiUtils.hideKeyboard(mSearchEditText);
         if (actionId == EditorInfo.IME_ACTION_SEARCH) {
             onSearch(textView.getText().toString());
             return true;

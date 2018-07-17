@@ -18,7 +18,7 @@
         android:padding="@dimen/fragment_twitter_no_twits_text_view_padding"
         android:text="@string/no_tweets"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_18"
         android:visibility="gone" />
 
     <ProgressBar

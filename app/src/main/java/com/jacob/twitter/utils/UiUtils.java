@@ -23,9 +23,8 @@ import java.util.regex.Pattern;
 
 public class UiUtils {
 
-    public static final int TYPE_HASH_TAG = 0;
-    public static final int TYPE_MENTION = 1;
-    public static final int TYPE_LINK = 2;
+    private static final String PATTERN_MENTION = "(@[A-Za-z0-9_-]+)";
+    private static final String PATTERN_HASH_TAG = "#(\\w+|\\W+)";
 
     public static boolean isOnline(Context context) {
         try {
@@ -59,8 +58,8 @@ public class UiUtils {
     public static void linkify(String text, TextView textView) {
         Resources resources = textView.getContext().getResources();
         Pattern urlPattern = Patterns.WEB_URL;
-        Pattern mentionPattern = Pattern.compile("(@[A-Za-z0-9_-]+)");
-        Pattern hashTagPattern = Pattern.compile("#(\\w+|\\W+)");
+        Pattern mentionPattern = Pattern.compile(PATTERN_MENTION);
+        Pattern hashTagPattern = Pattern.compile(PATTERN_HASH_TAG);
 
         Matcher hashTag = hashTagPattern.matcher(text);
         Matcher mention = mentionPattern.matcher(text);

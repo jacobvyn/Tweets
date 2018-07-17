@@ -41,7 +41,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/divider_height"
         android:layout_below="@id/fragment_search_view_edit_text"
         android:background="@color/white_pale" />
 </RelativeLayout>

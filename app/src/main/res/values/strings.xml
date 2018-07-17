@@ -5,4 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="search_edit_text_hint">Twitter Search</string>
     <string name="no_tweets">No tweets</string>
+    <string name="example_author">Author</string>
+    <string name="example_hello_world">Hello world</string>
+    <string name="text_example">12</string>
 </resources>
