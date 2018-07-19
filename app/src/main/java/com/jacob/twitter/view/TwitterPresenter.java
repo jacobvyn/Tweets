@@ -33,16 +33,12 @@ public class TwitterPresenter implements TwitterContract.Presenter {
 
                     @Override
                     public void onNext(List<Tweet> tweet) {
-                        mView.setData(tweet);
+                        handleResponse(tweet);
                     }
 
                     @Override
                     public void onError(Throwable trouble) {
-                        if (((HttpException) trouble).code() == 404) {
-                            mView.nothingFound();
-                        } else {
-                            mView.showMessage(trouble.getMessage());
-                        }
+                        handleError(trouble);
                         mView.showProgressView(false);
                     }
 
@@ -51,6 +47,22 @@ public class TwitterPresenter implements TwitterContract.Presenter {
                         mView.showProgressView(false);
                     }
                 }));
+    }
+
+    private void handleResponse(List<Tweet> tweetList) {
+        if (tweetList.size() == 0) {
+            mView.nothingFound();
+        } else {
+            mView.setData(tweetList);
+        }
+    }
+
+    private void handleError(Throwable trouble) {
+        if (((HttpException) trouble).code() == 404) {
+            mView.nothingFound();
+        } else {
+            mView.showMessage(trouble.getMessage());
+        }
     }
 
     public void destroy() {
